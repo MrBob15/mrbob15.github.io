@@ -1,14 +1,21 @@
 ---
 import IndexLayout from '@/layouts/IndexLayout.astro'
 import About from '@/components/widgets/About.astro'
+import ProfilePic from '@/components/ui/ProfilePic.astro'
 import PostList from '@/components/widgets/PostList.astro'
 import { themeConfig } from '@/config'
 import { getSortedFilteredPosts } from '@/utils/draft'
+import { getEntry } from 'astro:content'
 
 const posts = await getSortedFilteredPosts()
+const aboutEntry = await getEntry('about', 'about')
+const profilePic = aboutEntry?.data?.profilePic
+console.log(aboutEntry)
+console.log(profilePic)
 ---
 
 <IndexLayout title={themeConfig.site.title} description={themeConfig.site.description}>
+  <ProfilePic src={profilePic} />
   <About />
   <main>
     <PostList posts={posts} />

@@ -1,5 +1,6 @@
 import { glob } from 'astro/loaders'
 import { defineCollection, z } from 'astro:content'
+import { profile } from 'node:console'
 
 const posts = defineCollection({
   // Load Markdown and MDX files in the `src/content/posts/` directory.
@@ -18,7 +19,10 @@ const about = defineCollection({
   // Load Markdown files in the `src/content/about/` directory.
   loader: glob({ base: './src/content/about', pattern: '**/*.md' }),
   // Type-check frontmatter using a schema
-  schema: z.object({})
+  schema: z.object({
+    title: z.string(),
+    profilePic: z.string().optional(),
+  })
 })
 
 export const collections = { posts, about }

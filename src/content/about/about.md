@@ -1,5 +1,6 @@
 ---
 title: 'About'
+profilePic: '/profile.jpeg'
 ---
 
 <!--
@@ -7,10 +8,14 @@ This content will be displayed at the top of the index page.
 You can leave this empty if you don’t want to show any content.
 -->
 
-A static blog theme based on [Astro](https://astro.build), designed for clarity and focus.
+I will be a research scientist at [Anthrogen](https://anthrogen.com), an AI/bio startup based in SF. 
 
-With a deliberately minimal design, this layout ensures your content takes center stage. It's built for flexibility, offering customization options that honor its clean and elegant aesthetic.
+Previously, I did a math PhD at Duke where I worked in differential geometry and general relativity. Afterwards, I worked briefly in quant finance.
 
-Effortlessly share your thoughts in _a calm & dustless space._
+# Papers and Publications
 
-Check posts for details and view source on [GitHub](https://github.com/the3ash/astro-chiri).
+- Kazaras, Demetre & Khuri, Marcus & **Lin, Michael**. (2025). The Positive Mass Theorem for Creased Initial Data. Submitted to Transactions of the AMS. [arXiv](https://arxiv.org/abs/2508.17585)
+
+- Xu, Boyan & Tralie, Christopher & Antia, Alice & **Lin, Michael** & Perea, Jose. (2019). Twisty Takens: a geometric characterization of good observations on dense trajectories. Journal of Applied and Computational Topology. 3. [arXiv](https://arxiv.org/abs/1809.07131)
+
+<!-- ![HIKARI](./_assets/hikari.jpg) -->
